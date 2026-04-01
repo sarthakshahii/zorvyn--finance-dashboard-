@@ -1,0 +1,48 @@
+.insights-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  margin-bottom: 28px;
+}
+
+.insight-card {
+  padding: 22px;
+}
+
+.insight-icon {
+  font-size: 24px;
+  margin-bottom: 12px;
+}
+
+.insight-label {
+  font-size: 11px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  margin-bottom: 6px;
+}
+
+.insight-value {
+  font-family: "DM Serif Display", serif;
+  font-size: 24px;
+  color: var(--text-primary);
+}
+
+.insight-desc {
+  font-size: 12px;
+  color: var(--text-muted);
+  margin-top: 6px;
+  line-height: 1.5;
+}
+
+.monthly-row {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+  margin-bottom: 28px;
+}
+
+.heatmap-wrap {
+  margin-top: 16px;
+  overflow-x: auto;
+}

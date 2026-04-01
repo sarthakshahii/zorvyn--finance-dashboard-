@@ -1,0 +1,271 @@
+.tx-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 18px;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.tx-header-left h2 {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.tx-header-left p {
+  font-size: 13px;
+  color: var(--text-muted);
+  margin-top: 2px;
+}
+
+.export-group {
+  display: flex;
+  gap: 8px;
+}
+
+.admin-bar {
+  background: rgba(245,158,11,0.08);
+  border: 1px solid rgba(245,158,11,0.2);
+  border-radius: var(--radius-sm);
+  padding: 10px 16px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 16px;
+  font-size: 13px;
+  color: var(--amber);
+}
+
+.admin-bar svg {
+  flex-shrink: 0;
+}
+
+.tx-controls {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.tx-controls-spaced {
+  margin-bottom: 16px;
+}
+
+.search-box {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: var(--card2);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  padding: 0 12px;
+  height: 36px;
+}
+
+.search-box input {
+  background: none;
+  border: none;
+  outline: none;
+  color: var(--text-primary);
+  font-size: 13px;
+  width: 160px;
+}
+
+.search-box input::placeholder {
+  color: var(--text-muted);
+}
+
+.filter-select {
+  background: var(--card2);
+  border: 1px solid var(--border);
+  color: var(--text-primary);
+  padding: 0 10px;
+  height: 36px;
+  border-radius: var(--radius-sm);
+  font-size: 13px;
+  outline: none;
+  cursor: pointer;
+}
+
+.table-card {
+  padding: 0;
+}
+
+.tx-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.tx-table th {
+  text-align: left;
+  font-size: 11px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  padding: 10px 16px;
+  border-bottom: 1px solid var(--border);
+  cursor: pointer;
+  user-select: none;
+  white-space: nowrap;
+}
+
+.tx-table th:hover {
+  color: var(--text-secondary);
+}
+
+.tx-table td {
+  padding: 13px 16px;
+  border-bottom: 1px solid var(--border);
+  font-size: 13px;
+  color: var(--text-primary);
+}
+
+.tx-table tr:last-child td {
+  border-bottom: none;
+}
+
+.tx-table tr:hover td {
+  background: var(--navy3);
+}
+
+.tx-amount.income {
+  color: var(--green);
+  font-weight: 500;
+}
+
+.tx-amount.expense {
+  color: var(--red);
+  font-weight: 500;
+}
+
+.category-badge {
+  display: inline-block;
+  padding: 3px 10px;
+  border-radius: 20px;
+  font-size: 11px;
+  font-weight: 500;
+}
+
+.cat-food {
+  background: rgba(249,115,22,0.12);
+  color: var(--coral);
+}
+
+.cat-transport {
+  background: rgba(59,130,246,0.12);
+  color: var(--blue);
+}
+
+.cat-salary {
+  background: rgba(16,185,129,0.12);
+  color: var(--green);
+}
+
+.cat-entertainment {
+  background: rgba(139,92,246,0.12);
+  color: var(--purple);
+}
+
+.cat-utilities {
+  background: rgba(20,184,166,0.12);
+  color: var(--teal);
+}
+
+.cat-health {
+  background: rgba(239,68,68,0.12);
+  color: var(--red);
+}
+
+.cat-shopping {
+  background: rgba(245,158,11,0.12);
+  color: var(--amber);
+}
+
+.cat-freelance {
+  background: rgba(16,185,129,0.15);
+  color: #059669;
+}
+
+.cat-investment {
+  background: rgba(99,102,241,0.12);
+  color: #818cf8;
+}
+
+.cat-rent {
+  background: rgba(239,68,68,0.15);
+  color: #dc2626;
+}
+
+.sort-arrow {
+  margin-left: 4px;
+  opacity: 0.5;
+}
+
+.sort-arrow.active {
+  opacity: 1;
+  color: var(--amber);
+}
+
+.pagination {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 16px;
+  justify-content: flex-end;
+}
+
+.page-btn {
+  min-width: 32px;
+  height: 32px;
+  border-radius: var(--radius-sm);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 13px;
+  cursor: pointer;
+  border: 1px solid var(--border);
+  background: transparent;
+  color: var(--text-secondary);
+  transition: all 0.2s;
+}
+
+.page-btn:hover {
+  background: var(--navy3);
+  color: var(--text-primary);
+}
+
+.page-btn.active {
+  background: var(--amber);
+  color: #000;
+  border-color: var(--amber);
+}
+
+.tx-row-editing td {
+  background: rgba(245,158,11,0.06);
+}
+
+.edit-actions {
+  display: flex;
+  gap: 6px;
+}
+
+.btn-xs {
+  padding: 4px 10px;
+  font-size: 11px;
+  border-radius: 5px;
+  border: 1px solid var(--border2);
+  background: transparent;
+  color: var(--text-secondary);
+  cursor: pointer;
+  transition: all 0.15s;
+}
+
+.btn-xs:hover {
+  background: var(--navy3);
+  color: var(--text-primary);
+}
+
+.btn-xs.danger:hover {
+  background: rgba(239,68,68,0.1);
+  color: var(--red);
+  border-color: rgba(239,68,68,0.3);
+}

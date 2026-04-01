@@ -1,0 +1,118 @@
+.summary-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+  margin-bottom: 28px;
+}
+
+.summary-card {
+  padding: 20px 22px;
+  position: relative;
+  overflow: hidden;
+  transition: border-color 0.2s;
+}
+
+.summary-card:hover {
+  border-color: var(--border2);
+}
+
+.summary-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+}
+
+.summary-card.balance::before {
+  background: var(--amber);
+}
+
+.summary-card.income::before {
+  background: var(--green);
+}
+
+.summary-card.expenses::before {
+  background: var(--red);
+}
+
+.summary-card.savings::before {
+  background: var(--blue);
+}
+
+.card-label {
+  font-size: 11px;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  margin-bottom: 10px;
+}
+
+.card-value {
+  font-family: "DM Serif Display", serif;
+  font-size: 28px;
+  color: var(--text-primary);
+  letter-spacing: -0.5px;
+}
+
+.card-change {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 12px;
+  padding: 3px 8px;
+  border-radius: 20px;
+  margin-top: 8px;
+}
+
+.card-change.up {
+  background: rgba(16,185,129,0.12);
+  color: var(--green);
+}
+
+.card-change.down {
+  background: rgba(239,68,68,0.12);
+  color: var(--red);
+}
+
+.card-icon {
+  position: absolute;
+  top: 18px;
+  right: 18px;
+  width: 36px;
+  height: 36px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+}
+
+.balance .card-icon {
+  background: rgba(245,158,11,0.12);
+}
+
+.income .card-icon {
+  background: rgba(16,185,129,0.12);
+}
+
+.expenses .card-icon {
+  background: rgba(239,68,68,0.12);
+}
+
+.savings .card-icon {
+  background: rgba(59,130,246,0.12);
+}
+
+.charts-row {
+  display: grid;
+  grid-template-columns: 1.6fr 1fr;
+  gap: 16px;
+  margin-bottom: 28px;
+}
+
+.category-legend {
+  margin-top: 14px;
+  gap: 8px;
+}
